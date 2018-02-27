@@ -1,0 +1,131 @@
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+  background: #333;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/* These just style the content */
+article {
+/*  just a fancy border  */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+
+.logo {
+  width: 650px;
+  margin: auto;
+}
+
+.header {
+  background-color:rgba(255, 255, 255, 0.5);
+  padding: 30px;
+}
+
+.content {
+  background-color:rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  color: white;
+  font-size: 26px;
+}
+
+.footer {
+  background-color:rgba(200, 0, 123, 0.5);
+  min-height: 100%;
+  padding: 30px;
+}
+
+.buttn {
+  padding: 15px;
+}
+
+</style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row header">
+      <img src="logo.png" class="img-responsive logo">
+    </div>
+
+    <div class="row content">
+      <div class="col-md-8">
+        <p>About JOPLAN: We have been around for a while, you may have even been to one of our epic LAN parties! We are mostly gamers from the 4-State Area and Joplin MO, but we have members from all over! Anyone can join our steam group or discord and play with us, only rules are be respectful and keep everything PG.</p>
+        <a target="_blank" href="https://web.archive.org/web/20060423055723/http://www.joplan.com:80/">
+          <img class="img-responsive" src="flashback.png">
+        </a>
+    </div>
+
+      <div class="col-md-4"><iframe src="https://discordapp.com/widget?id=338548196412489728&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></div>
+    </div>
+
+    <div class="row footer">
+
+        <div class="col-md-4 buttn">
+          <a target="_blank" href="//steamcommunity.com/groups/joplan">
+            <img src="steam.png">
+          </a>
+        </div>
+
+        <div class="col-md-4 buttn">
+          <a target="_blank" href="https://www.facebook.com/joplan">
+            <img src="facebook.png">
+          </a>
+        </div>
+
+        <div class="col-md-4 buttn">
+          <a target="_blank" href="http://fbstudios.com">
+            <img src="fullbore.png">
+          </a>
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <video autoplay loop id="video-background" muted plays-inline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
